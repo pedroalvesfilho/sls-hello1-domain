@@ -7,10 +7,12 @@ Serverless domain name for Lambda - hello
 How to set up a custom domain name for Lambda & API Gateway with Serverless:
 - https://serverless.com/blog/serverless-api-gateway-domain/
 
-Where: `sls-hello1-domain`
+Folder: `sls-hello1-domain`
 
 ### Create your serverless backend
-Before you go any further, you should have a Serverless service with at least one function that has an HTTP event trigger. If you don't have that, you can use the code below. This example is in Python, but any runtime will work.
+Before you go any further, you should have a Serverless service with at least one function that has an HTTP event trigger. 
+If you don't have that, you can use the code below. 
+This example is in Python, but any runtime will work.
 
 In a clean directory `sls-hello1-domain`, add a `handler.py` file with the following contents:
   (...)
@@ -30,11 +32,11 @@ Run `sls deploy` to send the function to production:
 $ sls deploy
   (...)
 
-
 Once the deploy is finished, you will see the Service Information output. 
 This includes the API Gateway domain where you can trigger the functions. 
 In the example above, the hello function is available at
 - https://7bbn6avk11.execute-api.us-east-1.amazonaws.com/dev/hello
+
 I can visit that in the browser.
 
 Finally, the path is odd as well -- `/dev/hello` includes the stage (`dev`) as well as 
@@ -145,7 +147,7 @@ $
 ```
 ### Check endpoints:
 
-https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/hello
+- https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/hello
 
-https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/goodbye
+- https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/goodbye
 
