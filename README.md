@@ -151,3 +151,11 @@ $
 
 - https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/goodbye
 
+### Note about `/dev` stage:
+https://stackoverflow.com/questions/46857335/how-to-remove-stage-from-urls-for-aws-lambda-functions-serverless-framework
+
+This is an API Gateway feature/convention NOT from Serverless Framework so serverless can't do anything about it.
+API Gateway requires you with a stage and it is appended at the end of your endpoint.
+API Gateway endpoints are meant for developers though so it is not meant to be user-friendly.
+If you want it to be user-friendly, you can add a custom domain for it. 
+Different stages can have different custom subdomains.
