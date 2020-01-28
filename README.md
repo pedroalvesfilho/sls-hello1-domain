@@ -99,9 +99,13 @@ Voila! You have a much cleaner URL for your endpoints.
 
 ---
 
+### Setup AWS credentials
 ```
 $ export aws_access_key_id=AKIA5XXX...
 $ export aws_secret_access_key=dcpreEa6PydVxxx...
+```
+### Deploy
+```
 $ sls deploy
 Serverless: Packaging service...
 Serverless: Excluding development dependencies...
@@ -139,4 +143,7 @@ $ ls
 handler.py  README.md  serverless.yml
 $
 ```
+### Check endpoints:
+https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/hello
+https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/goodbye
 
