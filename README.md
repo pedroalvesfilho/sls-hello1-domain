@@ -144,6 +144,8 @@ handler.py  README.md  serverless.yml
 $
 ```
 ### Check endpoints:
+
 https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/hello
+
 https://7ndp2bz8v4.execute-api.us-east-1.amazonaws.com/dev/goodbye
 
