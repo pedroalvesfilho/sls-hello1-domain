@@ -1,0 +1,21 @@
+# serverless.yml
+
+service: serverless-http
+
+provider:
+  name: aws
+  runtime: python3.6
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+  goodbye:
+    handler: handler.goodbye
+    events:
+      - http:
+          path: goodbye
+          method: get

@@ -1,0 +1,12 @@
+{
+  "name": "sls-hello1-domain",
+  "version": "1.0.0",
+  "description": "2020-01-28\r ----------",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
