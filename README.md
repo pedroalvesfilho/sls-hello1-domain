@@ -5,7 +5,7 @@
 Serverless domain name for Lambda - hello
 
 How to set up a custom domain name for Lambda & API Gateway with Serverless:
-https://serverless.com/blog/serverless-api-gateway-domain/
+- https://serverless.com/blog/serverless-api-gateway-domain/
 
 Where: `sls-hello1-domain`
 
@@ -75,7 +75,7 @@ Then, you'll need to install the plugin in your service:
 $ npm install serverless-domain-manager --save-dev
 
 Then, configure it into your serverless.yml:
----
+```
 plugins:
   - serverless-domain-manager
 
@@ -85,23 +85,24 @@ custom:
     basePath: ''
     stage: ${self:provider.stage}
     createRoute53Record: true
----
+```
 
 You can create your custom domain with a single command:
 
 $ sls create_domain
 Serverless: Domain was created, may take up to 40 mins to be initialized
 
-
 Once your domain name is ready, run sls deploy again to redeploy your
 service.
 
 Voila! You have a much cleaner URL for your endpoints.
 
---------------------
+---
 
-domain $ export aws_access_key_id=AKIA5JIMLSYY6PTSYM7A
-domain $ export aws_secret_access_key=dcpreEa6PydVAkQdOOGbugcOg70bxJoQkpLPyRg5 domain $ sls deploy
+```
+$ export aws_access_key_id=AKIA5JIMLSYY6PTSYM7A
+$ export aws_secret_access_key=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 
+$ sls deploy
 Serverless: Packaging service...
 Serverless: Excluding development dependencies...
 Serverless: Creating Stack...
@@ -133,7 +134,9 @@ functions:
 layers:
   None
 Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
-domain $
-domain $ ls
+$
+$ ls
 handler.py  README.md  serverless.yml
-domain $
+$
+```
+
