@@ -1,7 +1,7 @@
 2020-01-28
 ----------
 
-# sls-hello1-domain
+### Folder: sls-hello1-domain
 Serverless domain name for Lambda - hello
 
 How to set up a custom domain name for Lambda & API Gateway with Serverless:
